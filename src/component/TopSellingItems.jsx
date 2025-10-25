@@ -70,17 +70,18 @@ const TopSellingItems = () => {
         width: '100%',
         bgcolor: '#fff',
         py: 6,
-        px: 2
+        px: 2,
+    
       }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" >
         {/* Header with Title and Navigation */}
         <Box 
           sx={{ 
             display: 'flex', 
             justifyContent: 'space-between', 
             alignItems: 'center',
-            mb: 4
+            mb: 4   
           }}
         >
           {/* Title */}
@@ -149,6 +150,7 @@ const TopSellingItems = () => {
                 sx={{
                   height: '100%',
                   borderRadius: 2,
+
                   border: '1px solid #f0f0f0',
                   transition: 'all 0.3s',
                   cursor: 'pointer',
@@ -156,7 +158,7 @@ const TopSellingItems = () => {
                     boxShadow: 4,
                     transform: 'translateY(-4px)'
                   }
-                }}
+                }}  
               >
                 {/* Product Image */}
                 <CardMedia
@@ -165,7 +167,8 @@ const TopSellingItems = () => {
                   alt={product.title}
                   sx={{
                     height: 320,
-                    objectFit: 'cover'
+                    objectFit: 'cover',
+                    
                   }}
                 />
 
