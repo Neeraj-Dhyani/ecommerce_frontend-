@@ -80,7 +80,7 @@ export default function Navbar1() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownAnchor, setDropdownAnchor] = useState(null);
   const [activeMenu, setActiveMenu] = useState(null);
-  
+
   const open = Boolean(anchorEl);
 
   const handleMenuClick = (e) => setAnchorEl(e.currentTarget);
@@ -188,8 +188,14 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/5f/e8/65/5fe8656f947c2538785f1908df446aab.jpg", label: "Bridal Collection" },
-        { img: "https://i.pinimg.com/1200x/9a/80/f1/9a80f1863c39fa61afb7437bee99cf36.jpg", label: "Wedding Lehenga" },
+        {
+          img: "https://i.pinimg.com/736x/5f/e8/65/5fe8656f947c2538785f1908df446aab.jpg",
+          label: "Bridal Collection",
+        },
+        {
+          img: "https://i.pinimg.com/1200x/9a/80/f1/9a80f1863c39fa61afb7437bee99cf36.jpg",
+          label: "Wedding Lehenga",
+        },
       ],
     },
     "Festive Store": {
@@ -240,8 +246,14 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/c5/e0/fc/c5e0fc2d45aa947148a603353f8368ca.jpg", label: "Festive Collection" },
-        { img: "https://i.pinimg.com/736x/1b/ef/6a/1bef6a3ba7ede35bdfc037698146eb1e.jpg", label: "Designer Wear" },
+        {
+          img: "https://i.pinimg.com/736x/c5/e0/fc/c5e0fc2d45aa947148a603353f8368ca.jpg",
+          label: "Festive Collection",
+        },
+        {
+          img: "https://i.pinimg.com/736x/1b/ef/6a/1bef6a3ba7ede35bdfc037698146eb1e.jpg",
+          label: "Designer Wear",
+        },
       ],
     },
     "Salwar Kameez": {
@@ -296,11 +308,17 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/9e/c3/41/9ec34176f70a4f6ed9e87294d81f1b41.jpg", label: "Anarkali Suits" },
-        { img: "https://i.pinimg.com/1200x/94/82/0d/94820d817d94115cbfa7ccd54b0669f5.jpg", label: "Pakistani Suits" },
+        {
+          img: "https://i.pinimg.com/736x/9e/c3/41/9ec34176f70a4f6ed9e87294d81f1b41.jpg",
+          label: "Anarkali Suits",
+        },
+        {
+          img: "https://i.pinimg.com/1200x/94/82/0d/94820d817d94115cbfa7ccd54b0669f5.jpg",
+          label: "Pakistani Suits",
+        },
       ],
     },
-    "Bridal": {
+    Bridal: {
       columns: [
         {
           title: "BRIDAL WEAR",
@@ -348,11 +366,17 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/5f/e8/65/5fe8656f947c2538785f1908df446aab.jpg", label: "Bridal Lehenga" },
-        { img: "https://i.pinimg.com/736x/33/98/76/3398768402a9f489d0c8e4a7a7a20c8f.jpg", label: "Bridal Saree" },
+        {
+          img: "https://i.pinimg.com/736x/5f/e8/65/5fe8656f947c2538785f1908df446aab.jpg",
+          label: "Bridal Lehenga",
+        },
+        {
+          img: "https://i.pinimg.com/736x/33/98/76/3398768402a9f489d0c8e4a7a7a20c8f.jpg",
+          label: "Bridal Saree",
+        },
       ],
     },
-    "Saree": {
+    Saree: {
       columns: [
         {
           title: "BY STYLE",
@@ -404,11 +428,17 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/33/98/76/3398768402a9f489d0c8e4a7a7a20c8f.jpg", label: "Designer Sarees" },
-        { img: "https://i.pinimg.com/736x/a1/b2/c3/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6.jpg", label: "Silk Sarees" },
+        {
+          img: "https://i.pinimg.com/736x/33/98/76/3398768402a9f489d0c8e4a7a7a20c8f.jpg",
+          label: "Designer Sarees",
+        },
+        {
+          img: "https://i.pinimg.com/736x/a1/b2/c3/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6.jpg",
+          label: "Silk Sarees",
+        },
       ],
     },
-    "Lehenga": {
+    Lehenga: {
       columns: [
         {
           title: "BY OCCASION",
@@ -458,8 +488,14 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/1200x/9a/80/f1/9a80f1863c39fa61afb7437bee99cf36.jpg", label: "Bridal Lehenga" },
-        { img: "https://i.pinimg.com/736x/e1/f2/a3/e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6.jpg", label: "Designer Lehenga" },
+        {
+          img: "https://i.pinimg.com/1200x/9a/80/f1/9a80f1863c39fa61afb7437bee99cf36.jpg",
+          label: "Bridal Lehenga",
+        },
+        {
+          img: "https://i.pinimg.com/736x/e1/f2/a3/e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6.jpg",
+          label: "Designer Lehenga",
+        },
       ],
     },
     "Indo Western": {
@@ -508,8 +544,14 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/1b/ef/6a/1bef6a3ba7ede35bdfc037698146eb1e.jpg", label: "Indo Western" },
-        { img: "https://i.pinimg.com/736x/c5/e0/fc/c5e0fc2d45aa947148a603353f8368ca.jpg", label: "Fusion Wear" },
+        {
+          img: "https://i.pinimg.com/736x/1b/ef/6a/1bef6a3ba7ede35bdfc037698146eb1e.jpg",
+          label: "Indo Western",
+        },
+        {
+          img: "https://i.pinimg.com/736x/c5/e0/fc/c5e0fc2d45aa947148a603353f8368ca.jpg",
+          label: "Fusion Wear",
+        },
       ],
     },
     "Plus Size": {
@@ -559,10 +601,13 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/2b/8c/e4/2b8ce4fb487f54586d11414c9249ce9b.jpg", label: "Plus Size Collection" },
+        {
+          img: "https://i.pinimg.com/736x/2b/8c/e4/2b8ce4fb487f54586d11414c9249ce9b.jpg",
+          label: "Plus Size Collection",
+        },
       ],
     },
-    "Women": {
+    Women: {
       columns: [
         {
           title: "ETHNIC WEAR",
@@ -600,19 +645,17 @@ export default function Navbar1() {
         },
         {
           title: "OCCASION",
-          items: [
-            "Party Wear",
-            "Casual Wear",
-            "Office Wear",
-            "Festive Wear",
-          ],
+          items: ["Party Wear", "Casual Wear", "Office Wear", "Festive Wear"],
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/c5/e0/fc/c5e0fc2d45aa947148a603353f8368ca.jpg", label: "Women Collection" },
+        {
+          img: "https://i.pinimg.com/736x/c5/e0/fc/c5e0fc2d45aa947148a603353f8368ca.jpg",
+          label: "Women Collection",
+        },
       ],
     },
-    "Men": {
+    Men: {
       columns: [
         {
           title: "ETHNIC WEAR",
@@ -657,10 +700,13 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/23/e5/04/23e504c0340715dedd9ee503a55246f7.jpg", label: "Men Collection" },
+        {
+          img: "https://i.pinimg.com/736x/23/e5/04/23e504c0340715dedd9ee503a55246f7.jpg",
+          label: "Men Collection",
+        },
       ],
     },
-    "Kids": {
+    Kids: {
       columns: [
         {
           title: "GIRLS",
@@ -705,10 +751,13 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/a2/b3/c4/a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7.jpg", label: "Kids Collection" },
+        {
+          img: "https://i.pinimg.com/736x/a2/b3/c4/a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7.jpg",
+          label: "Kids Collection",
+        },
       ],
     },
-    "Jewellery": {
+    Jewellery: {
       columns: [
         {
           title: "BY TYPE",
@@ -756,10 +805,13 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/b1/c2/d3/b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6.jpg", label: "Jewellery Collection" },
+        {
+          img: "https://i.pinimg.com/736x/b1/c2/d3/b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6.jpg",
+          label: "Jewellery Collection",
+        },
       ],
     },
-    "DIY": {
+    DIY: {
       columns: [
         {
           title: "CUSTOMIZATION",
@@ -794,7 +846,10 @@ export default function Navbar1() {
         },
       ],
       images: [
-        { img: "https://i.pinimg.com/736x/c1/d2/e3/c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6.jpg", label: "DIY Collection" },
+        {
+          img: "https://i.pinimg.com/736x/c1/d2/e3/c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6.jpg",
+          label: "DIY Collection",
+        },
       ],
     },
   };
@@ -816,55 +871,175 @@ export default function Navbar1() {
   ];
 
   const miniCategories = [
-    { name: "Salwar Kameez", img: "https://i.pinimg.com/736x/9e/c3/41/9ec34176f70a4f6ed9e87294d81f1b41.jpg" },
-    { name: "Wedding Dresses", img: "https://i.pinimg.com/736x/5f/e8/65/5fe8656f947c2538785f1908df446aab.jpg" },
-    { name: "Plus Size", img: "https://i.pinimg.com/736x/2b/8c/e4/2b8ce4fb487f54586d11414c9249ce9b.jpg" },
-    { name: "Men Clothing", img: "https://i.pinimg.com/736x/23/e5/04/23e504c0340715dedd9ee503a55246f7.jpg" },
-    { name: "Designer Wear", img: "https://i.pinimg.com/736x/c5/e0/fc/c5e0fc2d45aa947148a603353f8368ca.jpg" },
-    { name: "Indo Western", img: "https://i.pinimg.com/736x/1b/ef/6a/1bef6a3ba7ede35bdfc037698146eb1e.jpg" },
-    { name: "Pakistani Suits", img: "https://i.pinimg.com/1200x/94/82/0d/94820d817d94115cbfa7ccd54b0669f5.jpg" },
-    { name: "Lehenga", img: "https://i.pinimg.com/1200x/9a/80/f1/9a80f1863c39fa61afb7437bee99cf36.jpg" },
-    { name: "Saree", img: "https://i.pinimg.com/736x/33/98/76/3398768402a9f489d0c8e4a7a7a20c8f.jpg" },
+    {
+      name: "Salwar Kameez",
+      img: "https://i.pinimg.com/736x/9e/c3/41/9ec34176f70a4f6ed9e87294d81f1b41.jpg",
+    },
+    {
+      name: "Wedding Dresses",
+      img: "https://i.pinimg.com/736x/5f/e8/65/5fe8656f947c2538785f1908df446aab.jpg",
+    },
+    {
+      name: "Plus Size",
+      img: "https://i.pinimg.com/736x/2b/8c/e4/2b8ce4fb487f54586d11414c9249ce9b.jpg",
+    },
+    {
+      name: "Men Clothing",
+      img: "https://i.pinimg.com/736x/23/e5/04/23e504c0340715dedd9ee503a55246f7.jpg",
+    },
+    {
+      name: "Designer Wear",
+      img: "https://i.pinimg.com/736x/c5/e0/fc/c5e0fc2d45aa947148a603353f8368ca.jpg",
+    },
+    {
+      name: "Indo Western",
+      img: "https://i.pinimg.com/736x/1b/ef/6a/1bef6a3ba7ede35bdfc037698146eb1e.jpg",
+    },
+    {
+      name: "Pakistani Suits",
+      img: "https://i.pinimg.com/1200x/94/82/0d/94820d817d94115cbfa7ccd54b0669f5.jpg",
+    },
+    {
+      name: "Lehenga",
+      img: "https://i.pinimg.com/1200x/9a/80/f1/9a80f1863c39fa61afb7437bee99cf36.jpg",
+    },
+    {
+      name: "Saree",
+      img: "https://i.pinimg.com/736x/33/98/76/3398768402a9f489d0c8e4a7a7a20c8f.jpg",
+    },
   ];
 
   return (
-    <Paper elevation={1} sx={{ width: "100%", borderRadius: 0, m: 0, p: 0 }}
-       style={{ fontFamily: "'Work Sans', sans-serif" }}>
+    <Paper
+      elevation={1}
+      sx={{ width: "100%", borderRadius: 0, m: 0, p: 0 }}
+      style={{ fontFamily: "'Work Sans', sans-serif" }}
+    >
       {/* Top Navbar */}
-      <AppBar position="static" sx={{ backgroundColor: "#fff", color: "#000", boxShadow: "none", borderBottom: "1px solid #eee", m: 0, p: 0 }}>
-        <Toolbar sx={{ justifyContent: "space-between", flexWrap: "wrap", py: 1, px: { xs: 1, sm: 2, md: 4 } }}>
+      <AppBar
+        position="static"
+        sx={{
+          backgroundColor: "#fff",
+          color: "#000",
+          boxShadow: "none",
+          borderBottom: "1px solid #eee",
+          m: 0,
+          p: 0,
+        }}
+      >
+        <Toolbar
+          sx={{
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            py: 1,
+            px: { xs: 1, sm: 2, md: 4 },
+          }}
+        >
           {/* Mobile Menu Icon */}
           <Box sx={{ display: { xs: "block", md: "none" } }}>
-            <IconButton onClick={toggleDrawer} sx={{ transition: "all 0.2s ease", "&:hover": { backgroundColor: alpha("#c0004c", 0.1) } }}>
+            <IconButton
+              onClick={toggleDrawer}
+              sx={{
+                transition: "all 0.2s ease",
+                "&:hover": { backgroundColor: alpha("#c0004c", 0.1) },
+              }}
+            >
               <MenuIcon />
             </IconButton>
           </Box>
 
           {/* Logo */}
-          <Box display="flex" alignItems="center" sx={{ cursor: "pointer", transition: "transform 0.2s ease", "&:hover": { transform: "scale(1.02)" } }}>
-            <Typography variant="h5" sx={{ fontWeight: 700, fontFamily: "serif", letterSpacing: 1, color: "#c0004c" }}>Brand</Typography>
-            <Typography variant="subtitle2" sx={{ fontFamily: "serif", ml: 0.5, color: "#444", letterSpacing: 1 }}>fashion</Typography>
+          <Box
+            display="flex"
+            alignItems="center"
+            sx={{ cursor: "pointer", "&:hover": { transform: "scale(1.02)" } }}
+            onClick={() => navigate("/")} // Navigate to home page
+          >
+            <Typography
+              variant="h5"
+              sx={{
+                fontWeight: 700,
+                fontFamily: "serif",
+                letterSpacing: 1,
+                color: "#c0004c",
+              }}
+            >
+              Brand
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              sx={{
+                fontFamily: "serif",
+                ml: 0.5,
+                color: "#444",
+                letterSpacing: 1,
+              }}
+            >
+              fashion
+            </Typography>
           </Box>
 
           {/* Search */}
-          <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", alignItems: "center", mx: { xs: 1, md: 3 } }}>
-            <Box sx={{ width: { xs: "95%", sm: "70%", md: "50%", lg: "40%" }, position: "relative", display: "flex", justifyContent: "center" }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              mx: { xs: 1, md: 3 },
+            }}
+          >
+            <Box
+              sx={{
+                width: { xs: "95%", sm: "70%", md: "50%", lg: "40%" },
+                position: "relative",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Search sx={{ width: "100%", mx: "auto" }}>
-                <StyledInputBase placeholder="Search for Salwar Kameez..." inputProps={{ "aria-label": "search" }} />
-                <SearchIconWrapper><SearchIcon /></SearchIconWrapper>
+                <StyledInputBase
+                  placeholder="Search for Salwar Kameez..."
+                  inputProps={{ "aria-label": "search" }}
+                />
+                <SearchIconWrapper>
+                  <SearchIcon />
+                </SearchIconWrapper>
               </Search>
             </Box>
           </Box>
 
           {/* Right Icons */}
           <Box display="flex" alignItems="center" gap={2}>
-            <Typography variant="body2" sx={{ color: "#c0004c", cursor: "pointer", fontWeight: 500, display: { xs: "none", sm: "block" }, transition: "all 0.2s ease", "&:hover": { textDecoration: "underline", transform: "scale(1.05)" } }}>
+            <Typography
+              variant="body2"
+              sx={{
+                color: "#c0004c",
+                cursor: "pointer",
+                fontWeight: 500,
+                display: { xs: "none", sm: "block" },
+                transition: "all 0.2s ease",
+                "&:hover": {
+                  textDecoration: "underline",
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
               Need Help?
             </Typography>
 
             {user ? (
               <>
-                <IconButton onClick={handleMenuClick} sx={{ transition: "all 0.2s ease", "&:hover": { backgroundColor: alpha("#c0004c", 0.1), transform: "scale(1.1)" } }}>
+                <IconButton
+                  onClick={handleMenuClick}
+                  sx={{
+                    transition: "all 0.2s ease",
+                    "&:hover": {
+                      backgroundColor: alpha("#c0004c", 0.1),
+                      transform: "scale(1.1)",
+                    },
+                  }}
+                >
                   <PersonOutlineIcon />
                 </IconButton>
                 <Menu
@@ -888,52 +1063,90 @@ export default function Navbar1() {
                     },
                   }}
                 >
-                  <MenuItem disabled sx={{ fontWeight: 600 }}>Hello, {user.name}</MenuItem>
+                  <MenuItem disabled sx={{ fontWeight: 600 }}>
+                    Hello, {user.name}
+                  </MenuItem>
                   <Divider />
-                  <MenuItem onClick={() => navigate("/orders")}>Orders</MenuItem>
-                  <MenuItem onClick={() => navigate("/setting")}>Settings</MenuItem>
+                  <MenuItem onClick={() => navigate("/orders")}>
+                    Orders
+                  </MenuItem>
+                  <MenuItem onClick={() => navigate("/setting")}>
+                    Settings
+                  </MenuItem>
                   <MenuItem onClick={handleLogout}>Logout</MenuItem>
                 </Menu>
               </>
             ) : (
-              <Link to="/login" style={{ textDecoration: "none", color: "inherit" }}>
-                <IconButton sx={{ transition: "all 0.2s ease", "&:hover": { backgroundColor: alpha("#c0004c", 0.1), transform: "scale(1.1)" } }}>
+              <Link
+                to="/login"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <IconButton
+                  sx={{
+                    transition: "all 0.2s ease",
+                    "&:hover": {
+                      backgroundColor: alpha("#c0004c", 0.1),
+                      transform: "scale(1.1)",
+                    },
+                  }}
+                >
                   <PersonOutlineIcon />
                 </IconButton>
               </Link>
             )}
 
-            <IconButton sx={{ transition: "all 0.2s ease", "&:hover": { backgroundColor: alpha("#c0004c", 0.1), transform: "scale(1.1)", color: "#c0004c" } }}>
+            <IconButton
+              sx={{
+                transition: "all 0.2s ease",
+                "&:hover": {
+                  backgroundColor: alpha("#c0004c", 0.1),
+                  transform: "scale(1.1)",
+                  color: "#c0004c",
+                },
+              }}
+            >
               <FavoriteBorderIcon />
             </IconButton>
-            
-            <Link to="/AddtoCart" style={{ textDecoration: "none", color: "inherit" }}>
-              <IconButton sx={{ transition: "all 0.2s ease", "&:hover": { backgroundColor: alpha("#c0004c", 0.1), transform: "scale(1.1)", color: "#c0004c" } }}>
+
+            <Link
+              to="/AddtoCart"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <IconButton
+                sx={{
+                  transition: "all 0.2s ease",
+                  "&:hover": {
+                    backgroundColor: alpha("#c0004c", 0.1),
+                    transform: "scale(1.1)",
+                    color: "#c0004c",
+                  },
+                }}
+              >
                 <ShoppingBagOutlinedIcon />
               </IconButton>
             </Link>
-            
-            <Avatar 
-              sx={{ 
-                width: 26, 
-                height: 26, 
+
+            <Avatar
+              sx={{
+                width: 26,
+                height: 26,
                 cursor: "pointer",
                 transition: "all 0.3s ease",
-                "&:hover": { 
+                "&:hover": {
                   transform: "scale(1.15)",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.2)"
-                }
-              }} 
-              src={`https://flagcdn.com/h40/${countrycode}.png`} 
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
+                },
+              }}
+              src={`https://flagcdn.com/h40/${countrycode}.png`}
             />
           </Box>
         </Toolbar>
       </AppBar>
 
       {/* Drawer for mobile */}
-      <Drawer 
-        anchor="left" 
-        open={mobileOpen} 
+      <Drawer
+        anchor="left"
+        open={mobileOpen}
         onClose={toggleDrawer}
         PaperProps={{
           sx: {
@@ -961,23 +1174,23 @@ export default function Navbar1() {
       </Drawer>
 
       {/* Second Menu Row with Dropdowns */}
-      <Box 
-        sx={{ 
-          display: { xs: "none", md: "flex" }, 
-          justifyContent: "center", 
-          flexWrap: "wrap", 
-          alignItems: "center", 
-          py: 1.2, 
-          px: 0, 
-          borderBottom: "1px solid #eee", 
-          backgroundColor: "#fafafa", 
-          gap: 2, 
-          width: "100%", 
+      <Box
+        sx={{
+          display: { xs: "none", md: "flex" },
+          justifyContent: "center",
+          flexWrap: "wrap",
+          alignItems: "center",
+          py: 1.2,
+          px: 0,
+          borderBottom: "1px solid #eee",
+          backgroundColor: "#fafafa",
+          gap: 2,
+          width: "100%",
           m: 0,
           position: "relative",
-          zIndex: 10
+          zIndex: 10,
         }}
-           style={{ fontFamily: "'Work Sans', sans-serif" }}  
+        style={{ fontFamily: "'Work Sans', sans-serif" }}
       >
         {mainMenu.map((item) => (
           <Typography
@@ -986,17 +1199,17 @@ export default function Navbar1() {
             onMouseEnter={(e) => handleDropdownOpen(e, item)}
             sx={{
               fontSize: 14,
-             
+
               cursor: "pointer",
               color: activeMenu === item ? "#c0004c" : "#333",
               transition: "all 0.3s ease",
               position: "relative",
               padding: "6px 12px",
               borderRadius: 1,
-              "&:hover": { 
+              "&:hover": {
                 color: "#c0004c",
                 backgroundColor: alpha("#c0004c", 0.05),
-                transform: "translateY(-2px)"
+                transform: "translateY(-2px)",
               },
               "&::after": {
                 content: '""',
@@ -1010,30 +1223,30 @@ export default function Navbar1() {
                 transition: "width 0.3s ease",
               },
             }}
-               style={{ fontFamily: "'Work Sans', sans-serif" }}  
+            style={{ fontFamily: "'Work Sans', sans-serif" }}
           >
             {item}
           </Typography>
         ))}
-        <Button 
-          variant="contained" 
-          sx={{ 
-            backgroundColor: "#9b0048", 
-            fontSize: 12, 
-            textTransform: "none", 
-            px: 2, 
-            py: 0.7, 
-            ml: 2, 
-            borderRadius: 2, 
+        <Button
+          variant="contained"
+          sx={{
+            backgroundColor: "#9b0048",
+            fontSize: 12,
+            textTransform: "none",
+            px: 2,
+            py: 0.7,
+            ml: 2,
+            borderRadius: 2,
             transition: "all 0.3s ease",
             boxShadow: "0 2px 8px rgba(155,0,72,0.3)",
-            "&:hover": { 
+            "&:hover": {
               backgroundColor: "#b30056",
               transform: "translateY(-2px)",
-              boxShadow: "0 4px 12px rgba(155,0,72,0.4)"
-            } 
+              boxShadow: "0 4px 12px rgba(155,0,72,0.4)",
+            },
           }}
-             style={{ fontFamily: "'Work Sans', sans-serif" }}
+          style={{ fontFamily: "'Work Sans', sans-serif" }}
         >
           Flat 70% Off
         </Button>
@@ -1068,54 +1281,57 @@ export default function Navbar1() {
         <Box sx={{ p: 4 }}>
           <Grid container spacing={3}>
             {/* Text Columns */}
-            {activeMenu && menuData[activeMenu]?.columns.map((column, idx) => (
-              <Grid item xs={12} sm={6} md={2.4} key={idx}>
-                <Typography
-                  variant="subtitle2"
-                  sx={{
-                  
-                    mb: 2,
-                    color: "#333",
-                    fontSize: 13,
-                    letterSpacing: 0.5,
-                    textTransform: "uppercase",
-                  }}
-                     style={{ fontFamily: "'Work Sans', sans-serif" }}
-                >
-                  {column.title}
-                </Typography>
-                <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
-                  {column.items.map((item, i) => {
-                    const isHighlighted = typeof item === "object" && item.highlight;
-                    const itemName = typeof item === "object" ? item.name : item;
-                    return (
-                      <Typography
-                        key={i}
-                        variant="body2"
-                        sx={{
-                          fontSize: 13,
-                          color: isHighlighted ? "#c0004c" : "#666",
-                          fontWeight: isHighlighted ? 600 : 400,
-                          cursor: "pointer",
-                          transition: "all 0.2s ease",
-                          padding: "4px 8px",
-                          borderRadius: 1,
-                          "&:hover": { 
-                            color: "#c0004c",
-                            backgroundColor: alpha("#c0004c", 0.05),
-                            paddingLeft: "12px",
-                        
-                          },
-                        }}
-                           style={{ fontFamily: "'Work Sans', sans-serif" }}
-                      >
-                        {itemName}
-                      </Typography>
-                    );
-                  })}
-                </Box>
-              </Grid>
-            ))}
+            {activeMenu &&
+              menuData[activeMenu]?.columns.map((column, idx) => (
+                <Grid item xs={12} sm={6} md={2.4} key={idx}>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{
+                      mb: 2,
+                      color: "#333",
+                      fontSize: 13,
+                      letterSpacing: 0.5,
+                      textTransform: "uppercase",
+                    }}
+                    style={{ fontFamily: "'Work Sans', sans-serif" }}
+                  >
+                    {column.title}
+                  </Typography>
+                  <Box
+                    sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}
+                  >
+                    {column.items.map((item, i) => {
+                      const isHighlighted =
+                        typeof item === "object" && item.highlight;
+                      const itemName =
+                        typeof item === "object" ? item.name : item;
+                      return (
+                        <Typography
+                          key={i}
+                          variant="body2"
+                          sx={{
+                            fontSize: 13,
+                            color: isHighlighted ? "#c0004c" : "#666",
+                            fontWeight: isHighlighted ? 600 : 400,
+                            cursor: "pointer",
+                            transition: "all 0.2s ease",
+                            padding: "4px 8px",
+                            borderRadius: 1,
+                            "&:hover": {
+                              color: "#c0004c",
+                              backgroundColor: alpha("#c0004c", 0.05),
+                              paddingLeft: "12px",
+                            },
+                          }}
+                          style={{ fontFamily: "'Work Sans', sans-serif" }}
+                        >
+                          {itemName}
+                        </Typography>
+                      );
+                    })}
+                  </Box>
+                </Grid>
+              ))}
 
             {/* Image Section */}
             {activeMenu && menuData[activeMenu]?.images && (
@@ -1133,7 +1349,7 @@ export default function Navbar1() {
                         transition: "all 0.3s ease",
                         "&:hover": {
                           boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
-                          transform: "translateY(-4px)"
+                          transform: "translateY(-4px)",
                         },
                         "&:hover img": {
                           transform: "scale(1.1)",
@@ -1157,17 +1373,18 @@ export default function Navbar1() {
                           bottom: 0,
                           left: 0,
                           right: 0,
-                          background: "linear-gradient(to top, rgba(0,0,0,0.8), transparent)",
+                          background:
+                            "linear-gradient(to top, rgba(0,0,0,0.8), transparent)",
                           p: 2,
                         }}
                       >
                         <Typography
                           sx={{
                             color: "#fff",
-                        
+
                             fontSize: 14,
                           }}
-                             style={{ fontFamily: "'Work Sans', sans-serif" }}
+                          style={{ fontFamily: "'Work Sans', sans-serif" }}
                         >
                           {imgData.label}
                         </Typography>
@@ -1204,11 +1421,11 @@ export default function Navbar1() {
                 cursor: "pointer",
                 transition: "all 0.3s ease",
                 "&:hover": {
-                  transform: "translateY(-4px)"
+                  transform: "translateY(-4px)",
                 },
-                "&:hover img": { 
+                "&:hover img": {
                   transform: "scale(1.15)",
-                  boxShadow: "0 4px 12px rgba(192,0,76,0.3)"
+                  boxShadow: "0 4px 12px rgba(192,0,76,0.3)",
                 },
               }}
             >
@@ -1226,18 +1443,18 @@ export default function Navbar1() {
                   transition: "all 0.3s ease",
                 }}
               />
-              <Typography 
-                sx={{ 
-                  fontSize: 13, 
-                  lineHeight: 1.2, 
-                  color: "#333", 
+              <Typography
+                sx={{
+                  fontSize: 13,
+                  lineHeight: 1.2,
+                  color: "#333",
                   whiteSpace: "nowrap",
                   transition: "color 0.2s ease",
                   "&:hover": {
-                    color: "#c0004c"
-                  }
+                    color: "#c0004c",
+                  },
                 }}
-                   style={{ fontFamily: "'Work Sans', sans-serif" }}
+                style={{ fontFamily: "'Work Sans', sans-serif" }}
               >
                 {cat.name}
               </Typography>
