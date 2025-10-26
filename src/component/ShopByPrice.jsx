@@ -20,17 +20,19 @@ const ShopByPrice = () => {
   ];
 
   return (
-    <Box sx={{ bgcolor: '#fff', py: { xs: 3, md: 4 }, px: 2 }}>
+    <Box sx={{ bgcolor: '#FAFAFA', py: { xs: 3, md: 4 }, px: 2 }}>
       <Container maxWidth="xl">
         {/* Shop By Price Title */}
         <Typography
           sx={{
-            fontWeight: 600,
-            color: '#000',
+            textAlign:'center',
+            color: '#212121',
             fontSize: { xs: '1.5rem', md: '1.75rem' },
-            mb: 3,
-            fontFamily: 'Arial, sans-serif'
+            mb: 4,
+            fontWeight:"300",
+         
           }}
+           style={{ fontFamily: "'Work Sans', sans-serif" }}
         >
           Shop By Price
         </Typography>
@@ -73,16 +75,17 @@ const ShopByPrice = () => {
                     position: 'absolute',
                     top: 12,
                     left: 12,
-                    bgcolor: '#4A4A4A',
+                    bgcolor: '#FF4081',
                     color: '#fff',
                     px: 1.5,
                     py: 0.5,
                     fontSize: '0.7rem',
-                    fontWeight: 600,
+                  
                     borderRadius: '6px',
                     letterSpacing: '0.3px',
                     whiteSpace: 'nowrap'
                   }}
+                   style={{ fontFamily: "'Work Sans', sans-serif" }}
                 >
                   Under $59 Store
                 </Box>
@@ -91,15 +94,15 @@ const ShopByPrice = () => {
               {/* UNDER text */}
               <Typography
                 sx={{
-                  color: '#888',
+                  color: '#333333',
                   fontSize: { xs: '0.75rem', md: '0.8rem' },
-                  fontWeight: 500,
-                  letterSpacing: '3px',
+                 letterSpacing: '3px',
                   mb: 1,
                   textTransform: 'uppercase',
-                  fontFamily: 'Arial, sans-serif',
+               
                   mt: range.showLabel ? 4 : 0
                 }}
+                 style={{ fontFamily: "'Work Sans', sans-serif" }}
               >
                 UNDER
               </Typography>
@@ -107,14 +110,15 @@ const ShopByPrice = () => {
               {/* Price - Large Bold */}
               <Typography
                 sx={{
-                  color: '#000',
+                  color: '#333333',
                   fontSize: { xs: '3.5rem', md: '4rem' },
-                  fontWeight: 700,
+                
                   lineHeight: 1,
-                  fontFamily: 'Arial, sans-serif',
+                 
                   letterSpacing: '-1px',
                   mb: 2
                 }}
+                 style={{ fontFamily: "'Work Sans', sans-serif" }}
               >
                 ${range.price}
               </Typography>
