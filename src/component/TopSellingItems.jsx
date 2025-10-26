@@ -81,6 +81,7 @@ const TopSellingItems = () => {
             display: 'flex', 
             justifyContent: 'space-between', 
             alignItems: 'center',
+            
             mb: 4   
           }}
         >
@@ -88,10 +89,12 @@ const TopSellingItems = () => {
           <Typography
             variant="h5"
             sx={{
-              fontWeight: 600,
+             
               color: '#000',
-              fontSize: { xs: '1.5rem', md: '1.75rem' }
+              fontSize: { xs: '1.5rem', md: '1.75rem' },
+                
             }}
+               style={{ fontFamily: "'Work Sans', sans-serif" }}  
           >
             Top-selling Items
           </Typography>
@@ -189,6 +192,7 @@ const TopSellingItems = () => {
                       WebkitLineClamp: 2,
                       WebkitBoxOrient: 'vertical'
                     }}
+                       style={{ fontFamily: "'Work Sans', sans-serif" }}
                   >
                     {product.title}
                   </Typography>
@@ -198,10 +202,11 @@ const TopSellingItems = () => {
                     <Typography
                       variant="h6"
                       sx={{
-                        fontWeight: 700,
+                
                         color: '#000',
                         fontSize: '1rem'
                       }}
+                         style={{ fontFamily: "'Work Sans', sans-serif" }}
                     >
                       {product.price}
                     </Typography>
@@ -212,6 +217,7 @@ const TopSellingItems = () => {
                         fontSize: '0.875rem',
                         textDecoration: 'line-through'
                       }}
+                         style={{ fontFamily: "'Work Sans', sans-serif" }}
                     >
                       {product.originalPrice}
                     </Typography>

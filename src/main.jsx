@@ -8,7 +8,7 @@ import SalwarKameez from './component/SalwarKameez.jsx'
 import Men from './component/Men.jsx'
 import Signup from './component/login_component/Signup.jsx'
 import Login from './component/login_component/Login.jsx'
-import AddtoCart from './component/addtocart.jsx'
+import AddtoCart from "./component/AddtoCart.jsx"
 import Forgotpassword from './component/login_component/password/Forgotpassword.jsx'
 import Resetpassword from './component/login_component/password/Resetpassword.jsx'
 import UserSetting from './component/login_component/UserSetting.jsx'
@@ -18,13 +18,14 @@ import Layout from './Layout.jsx'
 import Detailpage from './component/Detailpage.jsx'
 import { AuthProvider } from './component/login_component/AuthContext'
 import User_Order from './component/login_component/User_Order.jsx'
+import MainPage from './Pages/MainPage.jsx'
 
 let route = createBrowserRouter([
   {
   path:"/",
   element:<Layout/>,
   children: [
-  {path:'/', element: <App/>},
+  {path:'/', element: <MainPage/>},
   {path:'/weddingstore', element:<WenddingStore/>},
   {path:'/salwarkameez', element:<SalwarKameez/>},
   {path:'/men', element:<Men/>},
