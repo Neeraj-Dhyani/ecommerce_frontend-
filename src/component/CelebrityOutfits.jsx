@@ -47,12 +47,13 @@ const CelebrityOutfits = () => {
         <Typography
           variant="h4"
           sx={{
-            fontWeight: 700,
+            textAlign:"center",
             color: '#000',
             fontSize: { xs: '1.75rem', sm: '2rem', md: '2.25rem' },
             mb: 4,
-            fontFamily: 'Arial, sans-serif'
+           
           }}    
+           style={{ fontFamily: "'Work Sans', sans-serif" }}
         >
           Celebrity Outfits
         </Typography>
@@ -112,12 +113,13 @@ const CelebrityOutfits = () => {
                     sx={{
                       color: '#fff',
                       fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
-                      fontWeight: 700,
+                     
                       letterSpacing: '1px',
                       mb: 2,
                       textAlign: 'center',
                       textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
                     }}
+                     style={{ fontFamily: "'Work Sans', sans-serif" }}
                   >
                     {outfit.title}
                   </Typography>
@@ -128,7 +130,7 @@ const CelebrityOutfits = () => {
                     sx={{
                       bgcolor: 'transparent',
                       color: '#fff',
-                      fontWeight: 600,
+                    
                       fontSize: { xs: '0.85rem', md: '0.95rem' },
                       letterSpacing: '1px',
                       px: 4,
@@ -143,6 +145,7 @@ const CelebrityOutfits = () => {
                         boxShadow: 'none'
                       }
                     }}
+                     style={{ fontFamily: "'Work Sans', sans-serif" }}    
                   >
                     {outfit.buttonText}
                   </Button>

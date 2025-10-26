@@ -1,22 +1,19 @@
 // First install these packages:
 // npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 
-import React, { useState, useEffect } from 'react';
-import { 
-  Box, 
-  Container, 
-  Typography, 
-  Button, 
+import React, { useState, useEffect } from "react";
+import {
+  Box,
+  Container,
+  Typography,
+  Button,
   IconButton,
   MobileStepper,
   useTheme,
   Fade,
-  Slide
-} from '@mui/material';
-import { 
-  KeyboardArrowLeft, 
-  KeyboardArrowRight 
-} from '@mui/icons-material';
+  Slide,
+} from "@mui/material";
+import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 
 const Sliding = () => {
   const theme = useTheme();
@@ -26,28 +23,31 @@ const Sliding = () => {
   const slides = [
     {
       id: 1,
-      title: 'WEDDING DRESSES',
-      discount: 'ADDITIONAL 10% DISCOUNT',
-      coupon: 'WEDDING',
-      image: 'https://images.unsplash.com/photo-1519657337289-077653f724ed?w=1200&q=80',
-      buttons: ['WEDDING', 'BRIDAL']
+      title: "WEDDING DRESSES",
+      discount: "ADDITIONAL 10% DISCOUNT",
+      coupon: "WEDDING",
+      image:
+        "https://images.unsplash.com/photo-1519657337289-077653f724ed?w=1200&q=80",
+      buttons: ["WEDDING", "BRIDAL"],
     },
     {
       id: 2,
-      title: 'BRIDAL COLLECTION',
-      discount: 'SPECIAL OFFER 15% OFF',
-      coupon: 'BRIDAL15',
-      image: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=1200&q=80',
-      buttons: ['SHOP NOW', 'VIEW ALL']
+      title: "BRIDAL COLLECTION",
+      discount: "SPECIAL OFFER 15% OFF",
+      coupon: "BRIDAL15",
+      image:
+        "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=1200&q=80",
+      buttons: ["SHOP NOW", "VIEW ALL"],
     },
     {
       id: 3,
-      title: 'DESIGNER LEHENGAS',
-      discount: 'EXCLUSIVE 20% DISCOUNT',
-      coupon: 'DESIGNER20',
-      image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1200&q=80',
-      buttons: ['EXPLORE', 'CUSTOMIZE']
-    }
+      title: "DESIGNER LEHENGAS",
+      discount: "EXCLUSIVE 20% DISCOUNT",
+      coupon: "DESIGNER20",
+      image:
+        "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1200&q=80",
+      buttons: ["EXPLORE", "CUSTOMIZE"],
+    },
   ];
 
   const maxSlides = slides.length;
@@ -84,78 +84,81 @@ const Sliding = () => {
   return (
     <Box
       sx={{
-        position: 'relative',
-        width: '100%',
-        height: '100vh',
-        overflow: 'hidden',
-        bgcolor: 'black'
+        position: "relative",
+        width: "100%",
+        height: "100vh",
+        overflow: "hidden",
+        bgcolor: "black",
       }}
     >
       {/* Slides Container */}
-      <Box sx={{ position: 'relative', width: '100%', height: '100%' }}>
+      <Box sx={{ position: "relative", width: "100%", height: "100%" }}>
         {slides.map((slide, index) => (
           <Fade
             key={slide.id}
             in={index === currentSlide}
             timeout={700}
             style={{
-              position: 'absolute',
+              position: "absolute",
               inset: 0,
-              display: index === currentSlide ? 'block' : 'none'
+              display: index === currentSlide ? "block" : "none",
             }}
           >
-            <Box sx={{ position: 'relative', width: '100%', height: '100%' }}>
+            <Box sx={{ position: "relative", width: "100%", height: "100%" }}>
               {/* Background Image */}
               <Box
                 sx={{
-                  position: 'absolute',
+                  position: "absolute",
                   inset: 0,
                   backgroundImage: `url(${slide.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  filter: 'brightness(0.7)',
-                  transition: 'transform 0.7s ease-in-out',
-                  transform: index === currentSlide ? 'scale(1)' : 'scale(1.05)'
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  filter: "brightness(0.7)",
+                  transition: "transform 0.7s ease-in-out",
+                  transform:
+                    index === currentSlide ? "scale(1)" : "scale(1.05)",
                 }}
               />
 
               {/* Gradient Overlay */}
               <Box
                 sx={{
-                  position: 'absolute',
+                  position: "absolute",
                   inset: 0,
-                  background: 'linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4), transparent)'
+                  background:
+                    "linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4), transparent)",
                 }}
               />
 
               {/* Content */}
               <Box
                 sx={{
-                  position: 'relative',
+                  position: "relative",
                   zIndex: 10,
-                  height: '90%',
-                  display: 'flex',
-                  alignItems: 'center'
+                  height: "90%",
+                  display: "flex",
+                  alignItems: "center",
                 }}
               >
                 <Container maxWidth="lg">
-                  <Box sx={{ maxWidth: '700px' }}>
+                  <Box sx={{ maxWidth: "700px" }}>
                     {/* Title */}
                     <Slide
                       direction="right"
                       in={index === currentSlide}
                       timeout={700}
-                      style={{ transitionDelay: '200ms' }}
+                      style={{ transitionDelay: "200ms" }}
                     >
                       <Typography
                         variant="h1"
                         sx={{
-                          fontSize: { xs: '3rem', md: '5rem' },
-                          
-                          color: 'white',
+                          fontSize: { xs: "2rem", md: "4rem" },
+
+                          color: "white",
                           mb: 3,
-                          letterSpacing: '0.1em'
+                          letterSpacing: "0.1em",
                         }}
+                        style={{ fontFamily: "'Work Sans', sans-serif" }}
                       >
                         {slide.title}
                       </Typography>
@@ -166,16 +169,17 @@ const Sliding = () => {
                       direction="right"
                       in={index === currentSlide}
                       timeout={700}
-                      style={{ transitionDelay: '400ms' }}
+                      style={{ transitionDelay: "400ms" }}
                     >
                       <Typography
                         variant="h3"
                         sx={{
-                          fontSize: { xs: '1.5rem', md: '2.5rem' },
-                      
-                          color: 'white',
-                          mb: 2
+                          fontSize: { xs: "1.3rem", md: "2.3  rem" },
+
+                          color: "white",
+                          mb: 2,
                         }}
+                        style={{ fontFamily: "'Work Sans', sans-serif" }}
                       >
                         {slide.discount}
                       </Typography>
@@ -186,22 +190,21 @@ const Sliding = () => {
                       direction="right"
                       in={index === currentSlide}
                       timeout={700}
-                      style={{ transitionDelay: '600ms' }}
+                      style={{ transitionDelay: "600ms" }}
                     >
                       <Typography
                         variant="h6"
                         sx={{
-                          fontSize: { xs: '1rem', md: '1.25rem' },
-                          color: 'rgba(255,255,255,0.9)',
-                          mb: 4
+                          fontSize: { xs: "1rem", md: "1.25rem" },
+                          color: "rgba(255,255,255,0.9)",
+                          mb: 4,
                         }}
                       >
-                        Coupon Code:{' '}
+                        Coupon Code:{" "}
                         <Box
                           component="span"
                           sx={{
-                        
-                            color: '#ec4899'
+                            color: "#ec4899",
                           }}
                         >
                           {slide.coupon}
@@ -214,27 +217,26 @@ const Sliding = () => {
                       direction="right"
                       in={index === currentSlide}
                       timeout={700}
-                      style={{ transitionDelay: '800ms' }}
+                      style={{ transitionDelay: "800ms" }}
                     >
-                      <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+                      <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
                         {slide.buttons.map((btn, i) => (
                           <Button
                             key={i}
                             variant="contained"
-                          
                             sx={{
-                              bgcolor: '#db2777',
-                              color: 'white',
+                              bgcolor: "#db2777",
+                              color: "white",
                               px: 4,
                               py: 1.5,
-                              
-                              fontSize: '1rem',
-                              '&:hover': {
-                                bgcolor: '#be185d',
-                                transform: 'scale(1.05)'
+
+                              fontSize: "1rem",
+                              "&:hover": {
+                                bgcolor: "#be185d",
+                                transform: "scale(1.05)",
                               },
-                              transition: 'all 0.3s',
-                              boxShadow: 3
+                              transition: "all 0.3s",
+                              boxShadow: 3,
                             }}
                           >
                             {btn}
@@ -254,19 +256,19 @@ const Sliding = () => {
       <IconButton
         onClick={prevSlide}
         sx={{
-          position: 'absolute',
+          position: "absolute",
           left: 16,
-          top: '50%',
-          transform: 'translateY(-50%)',
+          top: "50%",
+          transform: "translateY(-50%)",
           zIndex: 20,
-          bgcolor: 'rgba(0,0,0,0.3)',
-          backdropFilter: 'blur(10px)',
-          color: 'white',
-          '&:hover': {
-            bgcolor: 'rgba(0,0,0,0.5)',
-            transform: 'translateY(-50%) scale(1.1)'
+          bgcolor: "rgba(0,0,0,0.3)",
+          backdropFilter: "blur(10px)",
+          color: "white",
+          "&:hover": {
+            bgcolor: "rgba(0,0,0,0.5)",
+            transform: "translateY(-50%) scale(1.1)",
           },
-          transition: 'all 0.3s'
+          transition: "all 0.3s",
         }}
         aria-label="Previous slide"
       >
@@ -276,19 +278,19 @@ const Sliding = () => {
       <IconButton
         onClick={nextSlide}
         sx={{
-          position: 'absolute',
+          position: "absolute",
           right: 16,
-          top: '50%',
-          transform: 'translateY(-50%)',
+          top: "50%",
+          transform: "translateY(-50%)",
           zIndex: 20,
-          bgcolor: 'rgba(0,0,0,0.3)',
-          backdropFilter: 'blur(10px)',
-          color: 'white',
-          '&:hover': {
-            bgcolor: 'rgba(0,0,0,0.5)',
-            transform: 'translateY(-50%) scale(1.1)'
+          bgcolor: "rgba(0,0,0,0.3)",
+          backdropFilter: "blur(10px)",
+          color: "white",
+          "&:hover": {
+            bgcolor: "rgba(0,0,0,0.5)",
+            transform: "translateY(-50%) scale(1.1)",
           },
-          transition: 'all 0.3s'
+          transition: "all 0.3s",
         }}
         aria-label="Next slide"
       >
@@ -302,31 +304,31 @@ const Sliding = () => {
         position="static"
         activeStep={currentSlide}
         sx={{
-          position: 'absolute',
+          position: "absolute",
           bottom: 32,
-          left: '50%',
-          transform: 'translateX(-50%)',
+          left: "50%",
+          transform: "translateX(-50%)",
           zIndex: 20,
-          bgcolor: 'transparent',
-          '& .MuiMobileStepper-dots': {
-            gap: 1.5
+          bgcolor: "transparent",
+          "& .MuiMobileStepper-dots": {
+            gap: 1.5,
           },
-          '& .MuiMobileStepper-dot': {
-            bgcolor: 'rgba(255,255,255,0.5)',
+          "& .MuiMobileStepper-dot": {
+            bgcolor: "rgba(255,255,255,0.5)",
             width: 12,
             height: 12,
-            transition: 'all 0.3s',
-            cursor: 'pointer',
-            '&:hover': {
-              bgcolor: 'rgba(255,255,255,0.8)'
-            }
+            transition: "all 0.3s",
+            cursor: "pointer",
+            "&:hover": {
+              bgcolor: "rgba(255,255,255,0.8)",
+            },
           },
-          '& .MuiMobileStepper-dotActive': {
-            bgcolor: '#db2777',
+          "& .MuiMobileStepper-dotActive": {
+            bgcolor: "#db2777",
             width: 48,
             height: 12,
-            borderRadius: 6
-          }
+            borderRadius: 6,
+          },
         }}
         backButton={<Box />}
         nextButton={<Box />}
@@ -335,13 +337,13 @@ const Sliding = () => {
       {/* Custom Clickable Dots */}
       <Box
         sx={{
-          position: 'absolute',
+          position: "absolute",
           bottom: 32,
-          left: '50%',
-          transform: 'translateX(-50%)',
+          left: "50%",
+          transform: "translateX(-50%)",
           zIndex: 21,
-          display: 'flex',
-          gap: 1.5
+          display: "flex",
+          gap: 1.5,
         }}
       >
         {slides.map((_, index) => (
@@ -352,8 +354,8 @@ const Sliding = () => {
               width: index === currentSlide ? 48 : 12,
               height: 12,
               borderRadius: 6,
-              cursor: 'pointer',
-              transition: 'all 0.3s'
+              cursor: "pointer",
+              transition: "all 0.3s",
             }}
           />
         ))}

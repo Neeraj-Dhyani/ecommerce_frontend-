@@ -31,18 +31,19 @@ const DressesShopSection = () => {
 
  
   return (
-    <Box sx={{ bgcolor: '#fff', py: { xs: 4, md: 8 }, px: 2 }}>
+    <Box sx={{ bgcolor: '#fdeeeeff', py: { xs: 4, md: 8 }, px: 2 }}>
       <Container maxWidth="xl">
         {/* Dresses for Every Size Section */}
         <Typography
           sx={{
-            fontWeight: 600,
+           
             color: '#000',
             fontSize: { xs: '1.6rem', sm: '1.9rem', md: '2.2rem' },
             mb: 4,
-            fontFamily: 'Arial, sans-serif',
+         
             textAlign: 'center',
           }}
+           style={{ fontFamily: "'Work Sans', sans-serif" }}
         >
           Dresses for Every Size
         </Typography>
@@ -95,11 +96,12 @@ const DressesShopSection = () => {
                   <Typography
                     sx={{
                       color: '#fff',
-                      fontWeight: 700,
+                   
                       fontSize: { xs: '1.4rem', sm: '1.7rem' },
                       mb: 1,
                       textShadow: '2px 2px 6px rgba(0,0,0,0.7)',
                     }}
+                     style={{ fontFamily: "'Work Sans', sans-serif" }}
                   >
                     {dress.title}
                   </Typography>
@@ -107,12 +109,13 @@ const DressesShopSection = () => {
                   <Typography
                     sx={{
                       color: '#fff',
-                      fontWeight: 600,
+                     
                       textTransform: 'uppercase',
                       letterSpacing: 1,
                       fontSize: { xs: '0.95rem', sm: '1.05rem' },
                       textShadow: '1px 1px 3px rgba(0,0,0,0.5)',
                     }}
+                     style={{ fontFamily: "'Work Sans', sans-serif" }}    
                   >
                     {dress.buttonText}
                   </Typography>

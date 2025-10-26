@@ -17,15 +17,15 @@ const MainPage = () => {
         <Sliding />
       </section>
        
-      <section style={{ padding: '60px 0' }}>
+      <section>
         <Testimonials />
       </section>
 
-      <section style={{ padding: '60px 0' }}>
+      <section >
         <TopSellingItems />
       </section>
 
-      <section style={{ padding: '60px 0' }}>
+      <section >
         <ShopByCategories />
       </section> 
 
@@ -36,19 +36,19 @@ const MainPage = () => {
       </section>
       */}
 
-      <section style={{ padding: '60px 0' }}>
+      <section>
         <CelebrityOutfits />
       </section>
 
-      <section style={{ padding: '60px 0' }}>
+      <section >
         <DressesShopSection />  
       </section>
 
-      <section style={{ padding: '60px 0' }}>
+      <section>
         <ShopByPrice />
       </section>
 
-      <section style={{ padding: '60px 0' }}>
+      <section>
         <ContactSection />  
       </section>
 

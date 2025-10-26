@@ -84,14 +84,7 @@ const ShopByCategories = () => {
       title: "ENGAGEMENT LOOKS",
       buttonText: "SHOP NOW",
     },
-    {
-      id: 7,
-      image:
-        "https://i.pinimg.com/1200x/a7/39/c8/a739c8618e5bcfedf39590c3de57fd70.jpg",
-      title: "ENGAGEMENT LOOKS",
-      buttonText: "SHOP NOW",
-    },
-  ];
+  ];  
 
   const CategoryCard = ({ image, title, buttonText }) => (
     <Card
@@ -139,13 +132,14 @@ const ShopByCategories = () => {
         <Typography
           sx={{
             color: "white",
-            fontWeight: 700,
+          
             fontSize: { xs: "1.1rem", sm: "1.25rem", md: "1.5rem" },
             textAlign: "center",
             textShadow: "0 3px 8px rgba(0,0,0,0.7)",
             mb: 1.5,
             px: 2,
           }}
+           style={{ fontFamily: "'Work Sans', sans-serif" }}
         >
           {title}
         </Typography>
@@ -154,7 +148,7 @@ const ShopByCategories = () => {
           sx={{
             color: "white",
             borderColor: "white",
-            fontWeight: 600,
+           
             fontSize: "0.85rem",
             px: 3,
             py: 0.8,
@@ -165,6 +159,7 @@ const ShopByCategories = () => {
               color: "#000",
             },
           }}
+           style={{ fontFamily: "'Work Sans', sans-serif" }}
         >
           {buttonText}
         </Button>
@@ -173,18 +168,35 @@ const ShopByCategories = () => {
   );
 
   return (
-    <Box sx={{ bgcolor: "#fff", py: { xs: 4, md: 7 } }}>
+    <Box sx={{ bgcolor: "#f6efefff", py: { xs: 4, md: 7 } }}>
       <Container maxWidth="xl" sx={{ px: 0 }}>
+        
+        {/* 🔹 Main Heading */}
+        <Typography
+          sx={{
+         
+            color: "#000",
+            fontSize: { xs: "1.8rem", md: "2.2rem" },
+            textAlign: "center",
+            mb: { xs: 5, md: 8 },
+            letterSpacing: "0.5px",
+          }}
+          style={{ fontFamily: "'Work Sans', sans-serif" }}
+        >
+          Shop By Categories
+        </Typography>
+
         {/* Shop by Role */}
         <Box sx={{ mb: { xs: 6, md: 8 }, px: { xs: 2, md: 3 } }}>
           <Typography
             sx={{
-              fontWeight: 600,
+              
               color: "#000",
               fontSize: { xs: "1.5rem", md: "1.75rem" },
               mb: 3,
-              fontFamily: "serif",
+             
             }}
+             style={{ fontFamily: "'Work Sans', sans-serif" }}
           >
             Shop by Role
           </Typography>
@@ -204,17 +216,17 @@ const ShopByCategories = () => {
         <Box sx={{ px: { xs: 2, md: 3 } }}>
           <Typography
             sx={{
-              fontWeight: 600,
+             
               color: "#000",
               fontSize: { xs: "1.5rem", md: "1.75rem" },
               mb: 3,
-              fontFamily: "serif",
+             
             }}
+              style={{ fontFamily: "'Work Sans', sans-serif" }}
           >
             Shop by Occasion
           </Typography>
 
-          {/* Top row: 4 images */}
           <Grid container spacing={2} sx={{ mb: 2 }}>
             {occasionCategories.slice(0, 6).map((category) => (
               <Grid item xs={6} sm={6} md={3} key={category.id}>
@@ -223,17 +235,6 @@ const ShopByCategories = () => {
                 </Box>
               </Grid>
             ))}
-          </Grid>
-
-          {/* Bottom row: 2 large rectangular images */}
-          <Grid
-            container
-            spacing={3}
-            justifyContent="center"
-            alignItems="center"
-            sx={{ mt: { xs: 1, md: 2 } }}
-          >
-                
           </Grid>
         </Box>
       </Container>

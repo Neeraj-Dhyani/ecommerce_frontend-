@@ -66,14 +66,14 @@
         <Box
         sx={{
             width: '100%',
-            bgcolor: '#f5f5f5',
+            bgcolor: '#fcf1f1ff',
             py: 8,
-            px: 2
+            px: 2,
         }}
         >
         <Container maxWidth="lg">
             {/* Heading */}
-            <Box sx={{ textAlign: 'center', mb: 6 }}>
+            <Box sx={{ textAlign: 'center', mb: 6  }}>
             <Typography
                 variant="h4"
                 component="h2"
@@ -81,8 +81,9 @@
 
                 color: '#000',
                 fontSize: { xs: '1.75rem', md: '2rem' },
-                fontFamily: 'serif'
+               
                 }}
+                   style={{ fontFamily: "'Work Sans', sans-serif" }}
             >
                 Trusted and Loved by Our Valued Customers
             </Typography>
@@ -181,6 +182,7 @@
                   mb: 4,
                   fontSize: { xs: '1rem', md: '1.25rem' },
                 }}
+                   style={{ fontFamily: "'Work Sans', sans-serif" }}  
               >
                 "{testimonial.text}"
               </Typography>
